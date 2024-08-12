@@ -1,0 +1,40 @@
+// Exercise 5: Create a tsconfig.json File
+// Objective:
+// Set up a TypeScript configuration file (tsconfig.json) for a TypeScript project.
+// This configuration will specify items which are mentioned below
+// Specify ECMAScript target version +
+// Specify module code generation +
+// Enable all strict type-checking options +
+// Enables emit interoperability with ES6 modules +
+// Skip type checking of all declaration files +
+// Redirect output structure to the directory +
+// Specify the root directory of input files +
+// Generates corresponding .d.ts file +
+// Generates corresponding .map file -
+// Emit inline source maps +
+// Enable strict null checks +
+// Raise error on expressions and declarations with an implied 'any' type +
+// Report errors on unused local variables +
+// Report errors on unused parameters +
+
+
+{
+    "compilerOptions": {
+      "target": "ES6", // "ES2015"
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "declaration": true,
+      // "inlineSourceMap": true, conflict with "sourseMap":true
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true
+      //  "lib": ["ES2015", "DOM"]
+    }
+  }
+  
