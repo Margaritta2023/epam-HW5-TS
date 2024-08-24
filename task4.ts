@@ -3,19 +3,19 @@
 // takes a role and returns a message based on the role. Use type assertions where appropriate.
 
 enum Roles {
-    Admin,
-    User, 
-    Guest
+    Admin = "Admin",
+    User = "User", 
+    Guest = "Guest"
 }
 
 function getRoleMessage(role: Roles): string {
     switch (role) {
          case Roles.Admin:
-                return "Welcome, You have access as an ADMIN";
+                return `Welcome, You have access as an ${Roles.Admin}`;
          case Roles.User:
-                return "Welcome, You have access, as a USER";
+                return `Welcome, You have access as an ${Roles.User}`;
          case Roles.Guest:
-                return "Welcome, You have access, as a GUEST";
+                return `Welcome, You have access as an ${Roles.Guest}`;
           default:
                 return "Unknown Role" 
      }
