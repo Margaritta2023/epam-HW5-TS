@@ -5,9 +5,9 @@
 
 
 enum Color {
-    Red,
-    Green, 
-    Blue
+    Red = "Red",
+    Green = "Grenn", 
+    Blue = "Blue"
 }
 
 function describeColor(color:Color) : string {
